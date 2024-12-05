@@ -1,0 +1,229 @@
+
+.navbar{
+    background-color: black !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1;
+    padding: 0;
+    height: auto;
+}
+nav a{
+   margin-left:30px !important;
+   font-size: clamp(20px,1rem,40px) !important;
+   color:rgb(255, 255, 255) !important;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.portion-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    height: auto;
+    
+}
+.images{
+    width: 90%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom:5px;
+}
+
+.images img{
+    width: 70%;
+    border-radius: 10px;
+}
+.images li{
+    text-align: center;
+}
+.portion-2{
+    height: auto;
+    padding:5% ;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portion-2b{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.list-group{
+    width: 100%;
+}
+.dropdown-item{
+    color: black !important;
+}
+.nav-link:hover{
+    background-color: antiquewhite !important;
+    color: black !important;
+    padding: 5px;
+    height: 100%;
+    width:auto ;
+}
+.dropdown-item:hover{
+    width: 85%;
+    background-color: rgb(248, 248, 248);
+    color: black;
+}
+.list-group{
+    margin: 10px;
+    width: 70%;
+    border-radius: 0;
+}
+
+.li-btn{
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+.cards{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    margin:10px;
+}
+.portion-3{
+     height:60%;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center ;
+     margin: 5%; 
+}
+.portion-3-main{
+    width: 80%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    margin: 4%;
+    /* gap: 5%; */
+}
+.portion-3 h1{
+    font-family:"Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+}   
+.portion-3 .left img{
+    width:clamp(15px,1rem,5%);
+    margin-right: 5px;
+}
+
+.right{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .det{
+    display: flex;
+    gap: 5px;
+   
+}
+.left{
+    width:50%;
+}
+.left div{
+    display: flex;
+    margin: 5px;
+}
+.right form{
+    display: flex;
+    flex-direction: column;
+    gap:8px ;
+}
+.message input{
+    width: 100%;
+}
+.btn{
+    border-radius: 0;
+}
+.d-grid{
+    align-self: flex-end;
+}
+.portion-4 img{
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; 
+}
+  
+footer img{
+    width:3%;
+}
+@media screen and (max-width:780px) , (min-resolution: 200px)  {
+    .content{
+        width: 100%;
+    }
+    .portion-1{
+        height: auto;
+    }
+    .images{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .portion-2{
+        height: auto;
+    }
+    .images img{
+        width: 80%;
+        margin: 5px;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap
+    }
+    .right .det{
+        flex-wrap: wrap;
+    }
+    .det input{
+        height: auto;
+        width: 100%;
+    }
+    .portion-3-main{
+        width: 100%;
+        height:90%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left div{
+        flex-wrap: wrap;
+    }
+    .right{
+        margin: 15px;
+    }
+    footer img{
+        width: 10%;
+    }
+}
